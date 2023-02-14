@@ -15,6 +15,7 @@ public class DateUtil {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(cur);
         calendar.add(Calendar.DAY_OF_YEAR, -k);
+        System.out.println("no");
         return calendar.getTime();
     }
 }

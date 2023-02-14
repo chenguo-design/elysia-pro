@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- com.hibernate.entity.User类映射为 数据库的User表-->
+    <!--name指定实体类类名	table指定数据库表名-->
+    <class name="com.cg.elysia.common.model.UserModel" table="user">
+        <!--user类的id属性映射为user表的u_id字段  类型为整型-->
+        <!--因为“id”属性对应的“u_id”字段是表的主键所以 XML文件中用id元素描述-->
+        <id name="id" column="id" type="java.lang.Long">
+            <generator class="increment"/>
+        </id>
+        <!-- 其他属性对应表的普通字段 XML文件中用 property 元素描述-->
+        <!-- name指定实体类的属性，column指定数据库 表的字段-->
+        <property name="name" column="name" type="java.lang.String" >
+        </property>
+        <property name="phone" column="phone" type="java.lang.String" >
+        </property>
+        <property name="password" column="password" type="java.lang.String" >
+        </property>
+        <property name="type" column="type" type="java.lang.String" >
+        </property>
+    </class>
+</hibernate-mapping>
