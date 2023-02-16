@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 
-//@Configuration
-//@ConfigurationProperties(prefix = "chenguo.study")
-//@PropertySource(value = "classpath:config/secret.properties")
+@Configuration
+@ConfigurationProperties(prefix = "chenguo.study")
+@PropertySource(value = "classpath:config/secret.properties")
 
 public class ConfigProperties {
     private String url;

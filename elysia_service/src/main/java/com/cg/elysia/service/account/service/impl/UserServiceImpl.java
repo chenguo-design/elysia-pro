@@ -3,7 +3,7 @@ package com.cg.elysia.service.account.service.impl;
 import com.cg.elysia.common.converter.UserConverter;
 import com.cg.elysia.common.dto.UserDTO;
 import com.cg.elysia.common.model.UserModel;
-import com.cg.elysia.orm.querydsl.UserDao;
+import com.cg.elysia.orm.jpa.UserDao;
 import com.cg.elysia.service.account.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -45,6 +45,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDTO getById(Long id) {
         UserModel model = userDao.getById(id);
+        System.out.println(model);
         return UserConverter.converter.toSource(model);
     }
 

@@ -40,16 +40,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.cg.elysia</groupId>-->
-<!--            <artifactId>elysia_common</artifactId>-->
-<!--            <version>${project.parent.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.cg.elysia</groupId>-->
-<!--            <artifactId>elysia_service</artifactId>-->
-<!--            <version>${service.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.cg.elysia</groupId>
+            <artifactId>elysia_common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cg.elysia</groupId>
+            <artifactId>elysia_service</artifactId>
+            <version>${service.version}</version>
+        </dependency>
 
 
         <dependency>

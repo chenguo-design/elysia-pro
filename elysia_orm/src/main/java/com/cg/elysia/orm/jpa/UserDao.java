@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-//@Repository
+@Repository
 public interface UserDao extends JpaRepository<UserModel,Long> {
 
     List<UserModel> findByIdInOrderByIdDesc(List<Long> ids);
